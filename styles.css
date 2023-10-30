@@ -1,6 +1,52 @@
-h1 {
-    color: pink;
+/* 清除默认样式，初始化样式 */
+
+* {
+    /* 清除内外边距*/
+    margin: 0;
+    padding: 0;
+    /* 自减盒子模型 */
+    box-sizing: border-box;
 }
-p {
-    color: blue;
+ul ,ol{
+    /* 清除默认圆点 */
+    list-style: none;
+}
+a {
+    /* 取消下划线 */
+    text-decoration: none;
+    /* 字体颜色 */
+    color: #333;
+}
+input,
+button {
+    /*去掉input的轮廓线*/
+    outline: none;
+    border: 0;
+}
+.container{
+    height: 1000px;
+    max-width: 1200px;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin: 0 auto;
+    background-color: aqua;
+}
+
+.my-info,.my-hobby,.my-tech-stack{
+    width: 100%;
+    
+    height: 200px;
+}
+
+.my-info{
+    background-color: blue;
+}
+
+.my-tech-stack{
+    background-color: blueviolet;
+}
+
+.my-hobby{
+    background-color: brown;
 }
