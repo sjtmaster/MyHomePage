@@ -6,6 +6,7 @@
     padding: 0;
     /* 自减盒子模型 */
     box-sizing: border-box;
+    user-select: none;
 }
 ul ,ol{
     /* 清除默认圆点 */
@@ -15,7 +16,10 @@ a {
     /* 取消下划线 */
     text-decoration: none;
     /* 字体颜色 */
-    color: #333;
+    color: #FFF;
+}
+a,button{
+    cursor: pointer;
 }
 input,
 button {
@@ -23,30 +27,155 @@ button {
     outline: none;
     border: 0;
 }
-.container{
-    height: 1000px;
+/* 清除默认样式，初始化样式 */
+header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 999;
+}
+footer{
+    background-color: #292929;
+    height: 100%;
+    margin-top: 80px;
+}
+.header{
+    padding: 0 10px;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFF;
+}
+.header>ul{
+    display: flex;
+}
+.header>ul>li{
+    margin: 0 15px;
+}
+.div-size{
     max-width: 1200px;
+    margin: 0 auto;
+}
+.my-info-bg{
+    width: 100%;
+    height: 100%;
+    line-height: 0;
+}
+.my-info-bg-masking{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+.my-info-avatar{
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.my-info-avatar>img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.my-info-detail{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    padding-bottom: 50px;
+}
+.responsive{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.container{
+    /* height: 1000px; */
     /* display: flex; */
     /* justify-content: center; */
     /* align-items: center; */
-    margin: 0 auto;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 .my-info,.my-hobby,.my-tech-stack{
     width: 100%;
-    
-    height: 200px;
 }
 
 .my-info{
-    background-color: blue;
+    /* background-color: blue; */
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.my-info-hello{
+    height: 80px;
+    line-height: 80px;
+}
+.my-info-tag{
+    height: 50px;
+    line-height: 50px;
+}
+.row-list .list-title{
+    height: 70px;
+    line-height: 70px;
+    padding: 5px 0 0 10px;
+}
+.row-list .list-container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.row-list .list-container .list-item{
+    position: relative;
+    width: 270px;
+    height: 155px;
+}
+.row-list .list-container .list-item img{
+    width: 270px;
+    height: 155px;
+    object-fit: cover;
+}
+.row-list .list-container .list-item span{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: #FFF;
 }
 
-.my-tech-stack{
-    background-color: blueviolet;
+.about{
+    /* width: 100%; */
+    height: 120px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
 }
-
-.my-hobby{
-    background-color: brown;
+.copyright{
+    height: 70px;
+    border-top: 1px solid #444;
+    color: #aaa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-brand{
+    display: flex;
+    margin-top: 30px;
+}
+.about-brand>li{
+    margin: 0 22px;
+}
+.about-brand>li>a>img{
+    width: auto;
+    height: 30px;
+    object-fit: cover;
 }

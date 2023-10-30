@@ -5,29 +5,109 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./css/common.css">
     <title>MyHomePage</title>
 </head>
 <body>
     <Header>
-        
+        <div class="header div-size">
+            <h1>My Website</h1>
+            <ul>
+                <li class="font-18"><a href="#my-tech-stack">技术栈</a></li>
+                <li class="font-18"><a href="#my-hobby">业余爱好</a></li>
+                <li class="font-18"><a href="#about">关于</a></li>
+            </ul>
+        </div>
     </Header>
     <div class="container">
         <div class="my-info">
-
+            <div class="my-info-bg">
+                <img src="./Static/Img/bg.png" alt="" class="responsive" />
+            </div>
+            <!-- 个人信息 js渲染 -->
+            <div class="my-info-bg-masking">
+                <div class="my-info-detail div-size">
+                    <div class="my-info-avatar">
+                        <img src="./Static/Img/avatar.jpg" alt="">
+                    </div>
+                    <div class="my-info-hello font-46">
+                        Hello,I'm sjtMaster
+                    </div>
+                    <div class="my-info-tag font-22">
+                        前端工程师、全栈工程师
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="my-tech-stack">
-
+        <div id="my-tech-stack" class="row-list div-size">
+            <div class="list-title font-18 font-weight-800">
+                我的技术栈
+            </div>
+            <div class="list-container">
+                <button class="list-item">
+                    <img src="./Static/Img/1.png" alt="">
+                    <span class="font-weight-900 font-22">JS/TS</span>
+                </button>
+                <button class="list-item">
+                    <img src="./Static/Img/1.png" alt="">
+                    <span class="font-weight-900 font-22">JS/TS</span>
+                </button>
+                <button class="list-item">
+                    <img src="./Static/Img/1.png" alt="">
+                    <span class="font-weight-900 font-22">JS/TS</span>
+                </button>
+                <button class="list-item">
+                    <img src="./Static/Img/1.png" alt="">
+                    <span class="font-weight-900 font-22">JS/TS</span>
+                </button>
+            </div>
         </div>
-        <div class="my-hobby">
-            
+        <div id="my-hobby" class="row-list div-size">
+            <div class="list-title font-18 font-weight-800">
+                我的业余爱好
+            </div>
+            <div class="list-container">
+                <button class="list-item">
+                    <img src="./Static/Img/1.png" alt="">
+                    <span class="font-weight-900 font-22">摄影</span>
+                </button>
+                <button class="list-item">
+                    <img src="./Static/Img/1.png" alt="">
+                    <span class="font-weight-900 font-22">骑行</span>
+                </button>
+                <button class="list-item">
+                    <img src="./Static/Img/1.png" alt="">
+                    <span class="font-weight-900 font-22">乒乓球</span>
+                </button>
+                <button class="list-item">
+                    <img src="./Static/Img/1.png" alt="">
+                    <span class="font-weight-900 font-22">羽毛球</span>
+                </button>
+            </div>
         </div>
     </div>
-    <Footer>
-        <div class="about">
-                
+    <Footer id="about">
+        <div class="about div-size">
+            <ul class="about-brand">
+                <li class="about-brand-item">
+                    <a href="https://github.com" target="_blank">
+                        <img src="./Static/Icon/github.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://gitee.com/" target="_blank">
+                        <img src="./Static/Icon/gitee.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.iconfont.cn/" target="_blank">
+                        <img src="./Static/Icon/iconfont.png" alt="">
+                    </a>
+                </li>
+            </ul>
         </div>
-        <div class="copyright">
-
+        <div class="copyright div-size font-18">
+            <p>Copyright © 2023.sjtMaster</p>
         </div>
     </Footer>
     <script type="module" src="./main.js"></script>
